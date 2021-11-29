@@ -1,0 +1,95 @@
+<!--Alberto Perez II-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="code.js"></script>
+    <script src="class.js"></script>
+    <script src="dataLoader.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+        //Global vars
+        var theTime = new Date();
+        var tempTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+
+        //gets data into array
+        var data = getData();
+
+        //function to load and display data
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Program</title>
+</head>
+<body>
+    <table>
+        <td><img src="UATspaceLogo-1.jpg" alt="UAT Space Mission 3 Logo"></td>
+        <td><h1>UAT Space Program</h1></td>
+
+    </table>
+
+    <table id ="data" width = "70%" border="2">
+        <thead>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id = "seconds"></tr>
+            <tr id = "latitude"></tr>
+            <tr id = "longitude"></tr>
+            <tr id = "gps_altitude"></tr>
+            <tr id = "bmpSensor_altitude"></tr>
+            <tr id = "bmpSensor_pressure"></tr>
+            <tr id = "bmpSensor_temp"></tr>
+            <tr id = "digSensor_temp"></tr>
+            <tr id = "cssSensor_temp"></tr>
+            <tr id = "cssSensor_eCO2"></tr>
+            <tr id = "cssSensor_TVOC"></tr>
+            <tr id = "uv"></tr>
+            <tr id = "accelX"></tr>
+            <tr id = "accelY"></tr>
+            <tr id = "accelZ"></tr>
+            <tr id = "magnetX"></tr>
+            <tr id = "magnetY"></tr>
+            <tr id = "magnetZ"></tr>
+            <tr id = "gyroX"></tr>
+            <tr id = "gyroY"></tr>
+            <tr id = "gyroZ"></tr>
+        </tbody>
+    </table>
+    <br/>
+    <p id = "clockTime"></p>
+    <button id = "startButton" class="button" onclick="start()">Start</button>
+    <button id = "stopButton" class="button" disabled = true onclick="stop()">Stop</button>
+
+    <br>
+    
+    <button onclick="playCraps()">Play Craps!</button>
+    <br/>
+    <p id = "die1"> Die 1... </p>
+    <p id = "die2"> Die 2... </p>
+    <p id = "sum"> Sum... </p>
+    <p id = "crapsResults"> Results... </p>
+    <br/>
+    <br/>
+
+    <script>
+        var fallLaunch = new Mission(75, 100, 25, "Jerry Seinfield", 31, "October", 2021, 5);
+        var springLaunch = new Mission(25, 50, 5, "Mario", 12, "April", 2022, 3);
+
+
+    </script>
+    <button class="button" onclick="launchFall()">Launch Fall Mission</button> 
+    <button class="button" onclick="displayFall()">Display Fall Mission</button><br> 
+    <br/>
+    <button class="button" onclick="playStation()">Play SpaceStation Sounds</button> 
+
+
+</body>
+</html>
